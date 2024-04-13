@@ -1,11 +1,11 @@
 
 @media only screen and (max-width: 600px) {
     body {
+        overflow: auto;
         font-size: 18px;
         width: 100%;
         display: block;
         background-color: #131313;
-        overflow: hidden;
         position: absolute;
         border-radius: 0px 0px 0px 0px;
         color: white
@@ -56,11 +56,11 @@
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     body {
+        overflow: auto;
         font-size: 18px;
         width: 100%;
         display: block;
         background-color: #131313;
-        overflow: hidden;
         position: absolute;
         border-radius: 0px 0px 0px 0px;
         color: white
@@ -110,11 +110,11 @@
 
 @media only screen and (min-width: 901px) {
     body {
+        overflow: auto;
         font-size: 18px;
-        width: 2100px;
+        width: 100%;
         display: block;
         background-color: #131313;
-        overflow: hidden;
         position: absolute;
         border-radius: 0px 0px 0px 0px;
         color: white
@@ -126,17 +126,63 @@
         top: 0;
     }
 
-    .homehm{
+    .homehm {
+        position: relative;
         width: 100%;
-        height: 911px;
+        height: 900px;
+    }
+    
+    .homemgwall {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 900px;
+        opacity: 0.3;
+    }
+    
+    .homemgpc {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        width: 713px;
+        height: 476px;
+        z-index: 1;
+    }
 
-
+    .homewallname {
+        position: absolute;
+        font-size: 70px;
+        right: 200px;
+        top: 380px;
     }
 
     .reg {
-        
-        width: 150px;
-        height: 150px;
+        margin-top: 50px;
+        margin-right: 5px;
+        width: 70px; 
+        height: 70px;
+    }
+
+    .reg img {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+    }
+
+    .buttons {
+        background: none;
+        height: 50px;
+        font-size: 30px;
+        margin-top: 40px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .buttons:hover {
+        background-color: rgb(34, 34, 34);
     }
 
     .menu {
@@ -154,23 +200,32 @@
         text-align: center;
     }
 
-    .info-box {
-        width: 50%;
-        background-color: #007bff;
+    .navframe {
+        width: 96%;
+        height: 500px;
+        background-color: #131313;
         color: white;
-        border: 2px solid #007bff;
         border-radius: 10px;
         padding: 10px;
         margin-left: 20px;
     }
 
-    .info-box p {
-        margin: 0;
+    .navname p{
+        display: flex;
+        left: 100px;
     }
 
-    .detailed-info {
-        height: 1000px; /* Пример высоты для более подробной информации */
-        background-color: lightgreen;
+    .navq1 {
+        margin-left: 50px;
+        width: 30%;
+        height: 250px;
+        background-color: #000000;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .info-box p {
+        margin: 0;
     }
 
     button {
@@ -186,4 +241,51 @@
     button:hover {
         background-color: #0056b3;
     }
+
+    .comment {
+        width: 1920px; /* Ширина блока "Comment" */
+        height: 900px; /* Высота блока "Comment" */
+        position: relative; /* Позиционирование блока как родителя */
+        left: 50px;
+        top: 50px;
+    }
+
+    .quizbtn {
+        margin-top: 20px;
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        background: #00adb3;
+        border-radius: 10px;
+    }
+
+    .quizbtn p{
+        margin-top: 20px;
+    }
+    
+    .reviewsLink {
+        background-color: #00adb3; /* Цвет фона прямоугольника */
+        border-radius: 10px; /* Закругленные углы */
+        padding: 10px; /* Внутренний отступ */
+        position: absolute; /* Позиционирование элемента абсолютно */
+        top: -5px; /* Отступ сверху */
+        right: 400px; /* Отступ слева */
+        cursor: pointer; /* Показывать курсор в виде руки */
+    }
+    .rewiew {
+        margin-right: 10px;
+    }
+    .comment p {
+        margin-right: 40px; /* Добавим небольшой отступ слева для текста */
+    }
+    
+    /* #modelPC {
+        width: 100%;
+        height: 500px;
+        background-color: #000000;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 20px;
+    } */
 }
