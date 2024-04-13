@@ -1,11 +1,18 @@
-document.getElementById("scrollButton").addEventListener("click", function() {
-    const detailedInfo = document.querySelector('.detailed-info');
-    const scrollOffset = -50; // Расстояние отступа перед прокруткой
+// const container = document.getElementById('container');
+// const scene = new THREE.Scene();
+// const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+// const renderer = new THREE.WebGLRenderer();
 
-    const scrollToPosition = detailedInfo.getBoundingClientRect().top + window.scrollY + scrollOffset;
+// renderer.setSize(container.clientWidth, container.clientHeight);
+// container.appendChild(renderer.domElement);
 
-    window.scrollTo({
-        top: scrollToPosition,
-        behavior: 'smooth'
-    });
-});
+// const loader = new THREE.GLTFLoader();
+// loader.load('modelPC.gltf', function (gltf) {
+//     scene.add(gltf.scene);
+//     animate();
+// });
+
+// function animate() {
+//     requestAnimationFrame(animate);
+//     renderer.render(scene, camera);
+// }
